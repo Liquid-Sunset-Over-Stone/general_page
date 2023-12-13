@@ -90,12 +90,12 @@ p {
 
 .flex-item-left {
   flex: 50%;
-  width: 300px;
+  padding:5px;
 }
 
 .flex-item-right {
   flex: 50%;
-  width: 300px;
+  padding:5px;
 }
 
 @media (max-width: 800px) {
