@@ -85,7 +85,6 @@ p {
 .flex-container {
   display: flex;
   flex-direction: row;
-  font-size: 30px;
   text-align: center;
 }
 
