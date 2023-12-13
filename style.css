@@ -69,3 +69,12 @@ body {
 p {
   font-weight: bold;
 }
+.normal{
+  animation-name: yippee;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;}
+.accessib {
+  animation-name: access;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
