@@ -91,11 +91,13 @@ p {
 .flex-item-left {
   flex: 50%;
   padding:5px;
+  width: 350px;
 }
 
 .flex-item-right {
   flex: 50%;
   padding:5px;
+  width: 350px;
 }
 
 @media (max-width: 800px) {
