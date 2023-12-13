@@ -89,12 +89,10 @@ p {
 }
 
 .flex-item-left {
-  padding: 10px;
   flex: 50%;
 }
 
 .flex-item-right {
-  padding: 10px;
   flex: 50%;
 }
 
