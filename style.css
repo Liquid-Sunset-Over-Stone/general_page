@@ -1,3 +1,68 @@
+@keyframes yippee {
+  0% {
+    background-image: linear-gradient(
+      magenta,
+      blueviolet,
+      cyan,
+      blueviolet,
+      magenta
+    );
+    background-size: 64px 4000px;
+    background-position-y: 0px;
+  }
+  25% {
+    background-image: linear-gradient(
+      magenta,
+      blueviolet,
+      cyan,
+      blueviolet,
+      magenta
+    );
+    background-size: 64px 4000px;
+    background-position-y: 1000px;
+  }
+  50% {
+    background-image: linear-gradient(
+      magenta,
+      blueviolet,
+      cyan,
+      blueviolet,
+      magenta
+    );
+    background-size: 64px 4000px;
+    background-position-y: 2000px;
+  }
+  75% {
+    background-image: linear-gradient(
+      magenta,
+      blueviolet,
+      cyan,
+      blueviolet,
+      magenta
+    );
+    background-size: 64px 4000px;
+    background-position-y: 3000px;
+  }
+  100% {
+    background-image: linear-gradient(
+      magenta,
+      blueviolet,
+      cyan,
+      blueviolet,
+      magenta
+    );
+    background-size: 64px 4000px;
+    background-position-y: 4000px;
+  }
+}
+@keyframes access {
+  from {
+    background-color: navy;
+  }
+  to {
+    background-color: navy;
+  }
+}
 body {
   background-image: linear-gradient(navy, blue, navy);
 }
