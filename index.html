@@ -12,7 +12,24 @@
   exploding.classList.toggle("accessib");
   var urmom = document.getElementById("scree");
   urmom.classList.toggle("accessib");
-}</script>
+  var blinkclik = true;
+function noBlink() {
+  var funkyvar = document.getElementById("blinkies");
+  funkyvar.classList.toggle("nogif");
+  if (blinkclik == true) {
+    document.getElementById("blinkbutton").innerHTML =
+      "click to turn on gifs";
+    blinkclik = false;
+  } else {
+    if (blinkclik == false) {
+      document.getElementById("blinkbutton").innerHTML =
+        "click to turn off gifs";
+      blinkclik = true;
+    }
+  }
+}
+}
+  </script>
 </head>
   <!-- a lot of this code is copied over from another webpage i made over the summer. forgive the variable and id names. i got frustrated on occasion -->
 <body class="normal" id="stupif">
@@ -25,36 +42,37 @@
   </div>
   <div class="flex-container">
 
-    <div class="flex-item-left" style="max-width:645px;">
+    <div class="flex-item-left" style="max-width:645px; overflow:hidden;">
       <p>welcome to my webpage! if youre looking for my rain world oc website its right here:
-        <br> <a href="https://liquid-sunset-over-stone.github.io/hub/">rain world oc website with the same domain name because i dont feel like making another github account</a><br><br>happy holidays!<br>
+        <br> <a href="https://liquid-sunset-over-stone.github.io/hub/">rain world oc website with the same domain name because i dont feel like making another github account</a><br><br>happy holidays!<br>i am attempting to add accessibility functions but theyre a work in progress. the function to turn off gifs should work as well as the background gradient toggler. all images should have an alternate text. please feel free to contact me if i missed something!
       </p>
-      <br><button onclick="makeDark()">toggle background gradient</button><br>
+      <br><button onclick="makeDark()">toggle background gradient</button>
+      <button onclick="noBlink()" id="blinkbutton">click to turn off gifs</button><br>
       <div class="window">
         <div class="title-bar">
           <div class="title-bar-text">bio</div>
         </div>
         <div class="window-body">
-          <p>yet another nonbinary digital artist! i draw creatures and guys. usually in angsty situations, but sometimes being silly.<br> i used to do minecraft youtube. if you scroll down on <a href="https://www.youtube.com/@probably_creek">my channel</a> you can find it.<br>i am highly aware that im cringe or whatever but im having fun so i count it as a win. i like coding, hitting people with swords (up to you to decide if theyre real swords or fake swords), writing, composing music, and other things.<br> i should probably become a game developer. but im tired.</p>
+          <p>yet another nonbinary digital artist! i draw creatures and guys. usually in angsty situations, but sometimes being silly.<br> i used to do minecraft youtube. its in a playlist on <a href="https://www.youtube.com/@probably_creek">my channel</a>, if youre curious.<br>i am highly aware that im cringe or whatever but im having fun so i count it as a win. i like coding, hitting people with swords (up to you to decide if theyre real swords or fake swords), writing, composing music, and other things.<br> i should probably become a game developer. but im tired.</p>
         </div>
       </div>
       <br>
-      <div class="window">
+      <div class="window" style="overflow:scroll;">
         <div class="title-bar">
           <div class="title-bar-text">ms paint drawing of my sona</div>
         </div>
-        <img src="./whee.jpg" alt="low quality drawing of an anthropamorphic cat wearing a sweatshirt." style="max-width:350px;">
+        <img src="./whee.jpg" style="max-width:350px;" alt="low quality drawing of an anthropamorphic cat wearing a sweatshirt.">
       </div>
 
     </div>
 
-    <div class="flex-item-right">
+    <div class="flex-item-right" style="max-width:645px; overflow:hidden;">
       <div class="window">
         <div class="title-bar">
           <div class="title-bar-text">breaking news:</div>
         </div>
         <div class="window-body">
-          <p>why am i getting hyped up over a low quality joke about miros birds? /j<br><br>in all seriousness, thank you for the hyping up. it means a lot. my brain isnt used to proccessing this amount of serotonin.<br>desktop version of this page no longer is an absolute nightmare to look at!</p>
+          <p>why am i getting hyped up over a low quality joke about miros birds? /j<br><br>in all seriousness, thank you for the hyping up. it means a lot. my brain isnt used to proccessing this amount of serotonin.</p>
         </div>
       </div>
       <div class="window">
@@ -76,14 +94,15 @@
           </ul>
         </div>
       </div>
-<div class="window" style="max-width: 654px">
-  <div class="title-bar">
-    <div class="title-bar-text">might have to update this to "200 subs" soon X3</div>
-  </div>
-  <div class="window-body">
-    <img src="https://yt3.ggpht.com/abS55sC8Ew33RHbpV6RNCBl83_EVO-LBid3gj_AT0-0Hcih1ymjvtQDV5G9hrwDZYmmf2wk-K7gCIBg=s640-nd-v1" alt="a drawing of a cat wearing a sweatshirt riding a birdlike creature through a vast crypt. there is text that reads: 100 subs!" style="max-width:350px;">
-  </div>
-</div>
+      <img src="https://c.tenor.com/kbAXHrIp5agAAAAC/tenor.gif" style="width:630px;height:50px; image-rendering:pixelated;" alt="a gif of a bright blue wave of water on a pink background" id="blinkies">
+      <div class="window" style="max-width: 654px">
+        <div class="title-bar">
+          <div class="title-bar-text">might have to update this to "200 subs" soon X3</div>
+        </div>
+        <div class="window-body" style="overflow:scroll;">
+          <img src="https://yt3.ggpht.com/abS55sC8Ew33RHbpV6RNCBl83_EVO-LBid3gj_AT0-0Hcih1ymjvtQDV5G9hrwDZYmmf2wk-K7gCIBg=s640-nd-v1" alt="a drawing of a cat wearing a sweatshirt riding a birdlike creature through a vast crypt. there is text that reads: 100 subs!" style="max-width:350px;">
+        </div>
+      </div>
     </div>
   </div>
   <center>
