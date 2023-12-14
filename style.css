@@ -69,10 +69,11 @@ body {
 p {
   font-weight: bold;
 }
-.normal{
+.normal {
   animation-name: yippee;
   animation-iteration-count: infinite;
-  animation-duration: 15s;}
+  animation-duration: 15s;
+}
 .accessib {
   animation-name: access;
   animation-duration: 1s;
@@ -90,18 +91,21 @@ p {
 
 .flex-item-left {
   flex: 50%;
-  padding:5px;
-  width: 350px;
+  padding: 5px;
+  max-width: 635px;
 }
 
 .flex-item-right {
   flex: 50%;
-  padding:5px;
-  width: 350px;
+  padding: 5px;
+  max-width: 635px;
 }
 
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
+}
+.nogif {
+  visibility: hidden;
 }
