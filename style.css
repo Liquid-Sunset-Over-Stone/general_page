@@ -112,3 +112,9 @@ p {
 a{
   color: navy;
 }
+a:visited{
+  color:purple;
+}
+a:hover{
+  color:blue;
+}
