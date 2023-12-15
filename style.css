@@ -109,3 +109,6 @@ p {
 .nogif {
   visibility: hidden;
 }
+a{
+  color: navy;
+}
