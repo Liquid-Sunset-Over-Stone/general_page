@@ -106,6 +106,9 @@ p {
     flex-direction: column;
   }
 }
+.yesgif{
+  visibility: shown;
+}
 .nogif {
   visibility: hidden;
 }
