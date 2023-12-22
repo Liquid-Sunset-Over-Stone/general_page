@@ -12,6 +12,7 @@
   exploding.classList.toggle("accessib");
   var urmom = document.getElementById("scree");
   urmom.classList.toggle("accessib");}
+    
   var blinkclik = true;
 function noBlink() {
   var funkyvar = document.getElementById("blinkies");
@@ -21,11 +22,13 @@ function noBlink() {
     document.getElementById("blinkbutton").innerHTML =
       "click to turn on gifs";
     blinkclik = false;
+    console.log("off")
   } else {
     if (blinkclik == false) {
       document.getElementById("blinkbutton").innerHTML =
         "click to turn off gifs";
       blinkclik = true;
+      console.log("on")
     }
   }
 }
