@@ -11,162 +11,160 @@
   var exploding = document.getElementById("stupif");
   exploding.classList.toggle("accessib");
   var urmom = document.getElementById("scree");
-  urmom.classList.toggle("accessib");}
-    
-  var blinkclik = true;
+  urmom.classList.toggle("accessib");
+}
+
+var blinkclik = true;
 function noBlink() {
   var funkyvar = document.getElementById("blinkies");
-  var funkyvar = document.getElementById("blinkies_again");
+  var testvar = document.getElementById("blinkies_again");
   funkyvar.classList.toggle("nogif");
+  testvar.classList.toggle("nogif");
   if (blinkclik == true) {
-    document.getElementById("blinkbutton").innerHTML =
-      "click to turn on gifs";
+    document.getElementById("blinkbutton").innerHTML = "click to turn on gifs";
     blinkclik = false;
-    console.log("off")
   } else {
     if (blinkclik == false) {
       document.getElementById("blinkbutton").innerHTML =
         "click to turn off gifs";
       blinkclik = true;
-      console.log("on")
     }
   }
 }
+
     console.log("the errors and warnings are caused by the third party sources, i am so sorry\nim gonna try to get it figured out")
     console.log("also hi!!!")
   </script>
 </head>
   <!-- a lot of this code is copied over from another webpage i made over the summer. forgive the variable and id names. i got frustrated on occasion -->
 <!-- please do not interpret said variable and id names as ableism. i did not mean them as such. i was frustrated with the code and when i get frustrated with code i give things names like "stupif". this is not because i think that accessibility is stupid, its because i find adding stuff to be ridiciously complicated (which is stupid)-->
-<body class="normal" id="stupif"> 
-<!-- this is the window that encapsulates the rest of the stuff-->
-  <div class="window" style="max-width: 1290px;">     
-  <!-- this is the title bar -->
-  <div class="title-bar">
-    <div class="title-bar-text">cool webpage</div>
-    <div class="title-bar-controls">             
-      <button aria-label="Close"></button>
+<body class="normal" id="stupif">
+  <div class="window" style="max-width: 1290px;">
+    <!-- this is the title bar -->
+    <div class="title-bar">
+      <div class="title-bar-text">cool webpage</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
+    <div class="flex-container">
+      <!-- makes things go left -->
+      <div class="flex-item-left" style="max-width:645px; overflow:hidden;">
+        <p>welcome to my webpage! if youre looking for my rain world oc website its right here:
+          <br> <a href="https://liquid-sunset-over-stone.github.io/hub/">rain world oc website with the same domain name because i dont feel like making another github account</a><br><br>happy holidays!<br>please feel free to contact me if i missed something in terms of accessibility!
+        </p>
+        <p><a>back</a> | rain world webring | <a>forward</a></p>
+        <p>im attempting to start up a rain world community webring but currently these links take you nowhere<br>also attempting to embed the memory crypts vid without youtube tracking through it. i have cookies disabled but it does log some stuff when you click on the play button.</p>
+
+        <button onclick="makeDark()">toggle background gradient</button>
+        <button onclick="noBlink()" id="blinkbutton">click to turn off gifs</button><br>
+        <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">bio</div>
+          </div>
+          <div class="window-body">
+            <p>yet another nonbinary digital artist! i draw creatures and guys. usually in angsty situations, but sometimes being silly.<br> i used to do minecraft youtube. its in a playlist on <a href="https://www.youtube.com/@probably_creek">my channel</a>, if youre curious.<br>i am highly aware that im cringe or whatever but im having fun so i count it as a win. i like coding, hitting people with swords (up to you to decide if theyre real swords or fake swords), writing, composing music, and other things.<br> i should probably become a game developer. but im tired.</p>
+          </div>
+        </div>
+        <br>
+        <div class="window" style="overflow:auto; max-width:645px;">
+          <div class="title-bar">
+            <div class="title-bar-text">ms paint drawing of my sona</div>
+          </div>
+          <img src="./whee.jpg" style="max-width:350px;" alt="low quality drawing of an anthropamorphic cat wearing a sweatshirt.">
+        </div>
+
+      </div>
+      <!-- this is what makes things go to the right -->
+      <div class="flex-item-right" style="max-width:645px; overflow:hidden;">
+
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">breaking news:</div>
+          </div>
+          <div class="window-body">
+            <p>why am i getting hyped up over a low quality joke about miros birds? /j<br><br>in all seriousness, thank you for the hyping up. it means a lot. my brain isnt used to proccessing this amount of serotonin.<br>im doing some experimental stuff right now! especially with shading and perspective. my style is doing some changing and some staying the same. im really just having fun with it. i like the odd pixilated low quality style AND the complex concept-artlike style. who knows what ill do next! i plan on doing a bunch of high quality animations, animatics, and stuff, of course. but also some low-bit silly stuff!</p>
+          </div>
+        </div>
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">stuff im currently working on (in no particular order)</div>
+          </div>
+          <div class="window-body">
+            <ul>
+              <li>hosting animal cannibal artificer MAP</li>
+              <li>aurora borealis MAP part [29]</li>
+              <li>small spearmaster animation</li>
+              <li>writing oc lore</li>
+              <li>rivulet campaign</li>
+              <li>composing some music</li>
+              <li>schoolwork</li>
+              <li>studying perspective and backgrounds</li>
+              <li>this website</li>
+              <li>coming up with storyboard for animatic</li>
+              <li>beginning to digitize another MAP call storyboard</li>
+            </ul>
+          </div>
+        </div>
+        <div style="overflow:auto;"><img src="https://c.tenor.com/kbAXHrIp5agAAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" alt="a gif of a bright blue wave of water on a pink background" id="blinkies"></div>
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">might have to update this to "200 subs" soon X3</div>
+          </div>
+          <div class="window-body" style="overflow:auto; max-width:645px;">
+            <img src="./wheee.png" alt="a drawing of a cat wearing a sweatshirt riding a birdlike creature through a vast crypt. there is text that reads: 100 subs!" style="max-width:645px;">
+          </div>
+        </div>
+      </div>
+    </div> <!-- i ended the first flex container here-->
+    <!-- this is self explanatory, it centers the stuff here -->
+    <center>
+      <p>i built this website up from the ground minus the <a href="https://jdan.github.io/98.css/">main css framework</a> i used and the <a href="https://www.w3schools.com/csS/css3_flexbox.asp">flexbox tutorial</a> because css that makes the site actually function is not something i can do in the fleeting free moments of school.</p>
+      <p><u>i also want to clear up something before it becomes an issue or a concern:</u><br><br> i draw angst, violence, blood, and the like because i was a warrior cats kid. ive basically been coded to draw my favorite guys being dramatic/fighting/exploding things.<br> its not because i have issues or condone real violence. please do not mix up artist/writer/actor and character :3</p>
+    </center>
+    <div class="flex-container">
+      <!-- i start another flex container here-->
+      <div class="flex-item-right" style="max-width:645px; overflow:hidden;">
+        <div class="window" style="max-width: 645px">
+          <div class="title-bar">
+            <div class="title-bar-text">scug i am currently playing as</div>
+
+          </div>
+          <div class="window-body" style="max-width:645px; overflow:auto;">
+            <img src="https://static.miraheze.org/rainworldwiki/thumb/c/ca/Rivulet_select_screen.png/1024px-Rivulet_select_screen.png" style="max-width:645px">
+          </div>
+        </div>
+        <div style="overflow:auto; max-width:645px; max-height:50px;">
+          <img src="https://c.tenor.com/Q6IjG0Y6484AAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" id="blinkies_again">
+        </div>
+      </div>
+      <div class="flex-item-left" style="max-width:645px; overflow:hidden;">
+        <div class="window" style="max-width:645px;">
+          <div class="title-bar">
+            <div class="title-bar-text">stuff i say and what it means:</div>
+          </div>
+          <div class="window-body">
+            🧱 -- means i love more than i can put into words<br>
+            woa / woag -- literally just "woah"<br>
+            wawa -- idk could mean anything depending on context, but its a fan term for the noises slugcats make<br>
+            plate tectonically -- silly way of saying platonically<br>
+            sona -- i mean youre probably aware of what a sona is but in case you dont, its a persona<br><br>
+            i will add more to this dictionary as i go
+          </div>
+        </div>
+        <div class="window" style="max-width:645px;">
+          <div class="title-bar">
+            <div class="title-bar-text">miros bird (you guys liked this for some reason so it goes on website)</div>
+          </div>
+          <div class="window-body" style="max-width:645px; overflow:auto;">
+            <!-- i hate using iframe because it embeds another webpage into mine, which allows youtube's tracking to go through it when you click it. its not much but it logs a few things. -->
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/57uNeBevMHM?si=BWXC3OZtoxToAqkY" title="memory crypts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
-  <div class="flex-container">
-    <!-- makes things go left -->
-    <div class="flex-item-left" style="max-width:645px; overflow:hidden;">
-      <p>welcome to my webpage! if youre looking for my rain world oc website its right here:
-        <br> <a href="https://liquid-sunset-over-stone.github.io/hub/">rain world oc website with the same domain name because i dont feel like making another github account</a><br><br>happy holidays!<br>please feel free to contact me if i missed something in terms of accessibility!
-      </p>
-      <p><a>back</a> | rain world webring | <a>forward</a></p>
-      <p>im attempting to start up a rain world community webring but currently these links take you nowhere<br>also attempting to embed the memory crypts vid without youtube tracking through it. i have cookies disabled but it does log some stuff when you click on the play button.</p>
-      
-      <button onclick="makeDark()">toggle background gradient</button>              
-      <button onclick="noBlink()" id="blinkbutton">click to turn off gifs</button><br>
-      <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
-      <div class="window">
-        <div class="title-bar">
-          <div class="title-bar-text">bio</div>
-        </div>
-        <div class="window-body">
-          <p>yet another nonbinary digital artist! i draw creatures and guys. usually in angsty situations, but sometimes being silly.<br> i used to do minecraft youtube. its in a playlist on <a href="https://www.youtube.com/@probably_creek">my channel</a>, if youre curious.<br>i am highly aware that im cringe or whatever but im having fun so i count it as a win. i like coding, hitting people with swords (up to you to decide if theyre real swords or fake swords), writing, composing music, and other things.<br> i should probably become a game developer. but im tired.</p>
-        </div>
-      </div>
-      <br>
-      <div class="window" style="overflow:auto; max-width:645px;">
-        <div class="title-bar">
-          <div class="title-bar-text">ms paint drawing of my sona</div>
-        </div>
-        <img src="./whee.jpg" style="max-width:350px;" alt="low quality drawing of an anthropamorphic cat wearing a sweatshirt.">
-      </div>
-
-    </div>
-<!-- this is what makes things go to the right -->
-    <div class="flex-item-right" style="max-width:645px; overflow:hidden;"> 
-
-      <div class="window">
-        <div class="title-bar">
-          <div class="title-bar-text">breaking news:</div>
-        </div>
-        <div class="window-body">
-          <p>why am i getting hyped up over a low quality joke about miros birds? /j<br><br>in all seriousness, thank you for the hyping up. it means a lot. my brain isnt used to proccessing this amount of serotonin.<br>im doing some experimental stuff right now! especially with shading and perspective. my style is doing some changing and some staying the same. im really just having fun with it. i like the odd pixilated low quality style AND the complex concept-artlike style. who knows what ill do next! i plan on doing a bunch of high quality animations, animatics, and stuff, of course. but also some low-bit silly stuff!</p>
-        </div>
-      </div>
-      <div class="window">
-        <div class="title-bar">
-          <div class="title-bar-text">stuff im currently working on (in no particular order)</div>
-        </div>
-        <div class="window-body">
-          <ul> 
-            <li>hosting animal cannibal artificer MAP</li> 
-            <li>aurora borealis MAP part [29]</li>
-            <li>small spearmaster animation</li>
-            <li>writing oc lore</li>
-            <li>rivulet campaign</li>
-            <li>composing some music</li>
-            <li>schoolwork</li>
-            <li>studying perspective and backgrounds</li>
-            <li>this website</li>
-            <li>coming up with storyboard for animatic</li>
-            <li>beginning to digitize another MAP call storyboard</li>
-          </ul>
-        </div>
-      </div>
-      <div style="overflow:auto;"><img src="https://c.tenor.com/kbAXHrIp5agAAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" alt="a gif of a bright blue wave of water on a pink background" id="blinkies"></div>
-      <div class="window">
-        <div class="title-bar">
-          <div class="title-bar-text">might have to update this to "200 subs" soon X3</div>
-        </div>
-        <div class="window-body" style="overflow:auto; max-width:645px;">
-          <img src="./wheee.png" alt="a drawing of a cat wearing a sweatshirt riding a birdlike creature through a vast crypt. there is text that reads: 100 subs!" style="max-width:645px;">
-        </div>
-      </div>
-    </div>
-  </div> <!-- i ended the first flex container here-->
-  <!-- this is self explanatory, it centers the stuff here -->
-  <center>  
-    <p>i built this website up from the ground minus the <a href="https://jdan.github.io/98.css/">main css framework</a> i used and the <a href="https://www.w3schools.com/csS/css3_flexbox.asp">flexbox tutorial</a> because css that makes the site actually function is not something i can do in the fleeting free moments of school.</p>
-    <p><u>i also want to clear up something before it becomes an issue or a concern:</u><br><br> i draw angst, violence, blood, and the like because i was a warrior cats kid. ive basically been coded to draw my favorite guys being dramatic/fighting/exploding things.<br> its not because i have issues or condone real violence. please do not mix up artist/writer/actor and character :3</p>
-  </center>
-  <div class="flex-container"> <!-- i start another flex container here-->
-    <div class="flex-item-right" style="max-width:645px; overflow:hidden;">
-      <div class="window" style="max-width: 645px">
-        <div class="title-bar">
-          <div class="title-bar-text">scug i am currently playing as</div>
-
-        </div>
-        <div class="window-body" style="max-width:645px; overflow:auto;">
-          <img src="https://static.miraheze.org/rainworldwiki/thumb/c/ca/Rivulet_select_screen.png/1024px-Rivulet_select_screen.png" style="max-width:645px">
-        </div>
-      </div>
-      <div style="overflow:auto; max-width:645px; max-height:50px;">
-      <img src="https://c.tenor.com/Q6IjG0Y6484AAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" id="blinkes_again">
-    </div>
-    </div>
-    <div class="flex-item-left" style="max-width:645px; overflow:hidden;">
-      <div class="window" style="max-width:645px;">
-        <div class="title-bar">
-          <div class="title-bar-text">stuff i say and what it means:</div>
-        </div>
-        <div class="window-body">
-          🧱 -- means i love more than i can put into words<br>
-          woa / woag -- literally just "woah"<br>
-          wawa -- idk could mean anything depending on context, but its a fan term for the noises slugcats make<br>
-          plate tectonically -- silly way of saying platonically<br>
-          sona -- i mean youre probably aware of what a sona is but in case you dont, its a persona<br><br>
-          i will add more to this dictionary as i go
-        </div>
-      </div>
-      <div class="window" style="max-width:645px;">
-        <div class="title-bar">
-          <div class="title-bar-text">miros bird (you guys liked this for some reason so it goes on website)</div>
-        </div>
-        <div class="window-body" style="max-width:645px; overflow:auto;">
-          <!-- i hate using iframe because it embeds another webpage into mine, which allows youtube's tracking to go through it when you click it. its not much but it logs a few things. -->
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/57uNeBevMHM?si=BWXC3OZtoxToAqkY" title="memory crypts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- my html is really messy so dont use this as a complete example, theres a ton of inconsistencies and patching up of issues that poke through visually
-but there are a few cool things -->
 </body>
 </html>
