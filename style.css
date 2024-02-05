@@ -57,10 +57,10 @@
 }
 @keyframes access {
   from {
-    background-color: navy;
+    background-image: url("./spaaaaccee.png");
   }
   to {
-    background-color: navy;
+    background-image: url("./spaaaaccee.png");
   }
 }
 body {
