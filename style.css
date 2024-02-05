@@ -58,9 +58,13 @@
 @keyframes access {
   from {
     background-image: url("./spaaaaccee.png");
+    background-image-repeat: repeat;
+    background-size: 64px 64px;
   }
   to {
     background-image: url("./spaaaaccee.png");
+    background-image-repeat: repeat;
+    background-size: 64px 64px;
   }
 }
 body {
