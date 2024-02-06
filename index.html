@@ -18,8 +18,10 @@ var blinkclik = true;
 function noBlink() {
   var funkyvar = document.getElementById("blinkies");
   var testvar = document.getElementById("blinkies_again");
+  var yetanothervar = document.getElementById("blinkies_yet_again");
   funkyvar.classList.toggle("nogif");
   testvar.classList.toggle("nogif");
+  yetanothervar.classList.toggle("nogif");
   if (blinkclik == true) {
     document.getElementById("blinkbutton").innerHTML = "click to turn on gifs";
     blinkclik = false;
@@ -180,6 +182,9 @@ function noBlink() {
           </div>
           <div class="window-body" style="max-width:645px; overflow:auto;">i wonder how much ive been lied to. and if the liars know theyre lying. if manipulation and misinformation and propaganda is adopted and spread with ignorance and good intent. is it just that i want to still believe and trust? and do i, in believing and trusting until i detect something wrong, spread lies and manipulation by accident? i wonder how much ive lied, too.
           </div>
+        </div>
+        <div style="overflow:auto; max-width:645px; max-height:50px;">
+          <img src="https://c.tenor.com/-dxN7balt2kAAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" id="blinkies_yet_again">
         </div>
       </div>
     </div>
