@@ -96,13 +96,13 @@ p {
 .flex-item-left {
   flex: 50%;
   padding: 5px;
-  max-width: 635px;
+  max-width: 955px;
 }
 
 .flex-item-right {
   flex: 50%;
   padding: 5px;
-  max-width: 635px;
+  max-width: 315px;
 }
 
 @media (max-width: 800px) {
@@ -110,18 +110,18 @@ p {
     flex-direction: column;
   }
 }
-.yesgif{
+.yesgif {
   visibility: shown;
 }
 .nogif {
   visibility: hidden;
 }
-a{
+a {
   color: navy;
 }
-a:visited{
-  color:purple;
+a:visited {
+  color: purple;
 }
-a:hover{
-  color:blue;
+a:hover {
+  color: blue;
 }
