@@ -43,12 +43,12 @@ function noBlink() {
   <!-- a lot of this code is copied over from another webpage i made over the summer. forgive the variable and id names. i got frustrated on occasion -->
 <!-- please do not interpret said variable and id names as ableism. i did not mean them as such. i was frustrated with the code and when i get frustrated with code i give things names like "stupif". this is not because i think that accessibility is stupid, its because i find adding stuff to be ridiciously complicated (which is stupid)-->
 <body class="normal" id="stupif">
-  <div class="window" style="max-width: 1290px;">
+  <div class="window" style="max-width: 1290px;" id="big_window">
     <!-- this is the title bar -->
     <div class="title-bar">
       <div class="title-bar-text">cool webpage</div>
       <div class="title-bar-controls">
-        <button aria-label="Close"></button>
+        <button aria-label="Close" onclick="document.getElementById('big_window').style.visibility = 'hidden';" type="closes everything"></button>
       </div>
     </div>
     <div class="status-bar" style="text-align:center;">
