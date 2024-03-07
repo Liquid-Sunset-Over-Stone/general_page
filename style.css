@@ -109,10 +109,19 @@ p {
   padding: 5px;
   flex-direction: row;
   max-width: 955px;
-  overflow: wrap;
 }
 @media (max-width: 800px) {
   .flex-container {
+    flex-direction: column-reverse;
+  }
+  .flex-item-right {
+    max-width: 645px;
+  }
+  .flex-item-left {
+    max-width: 645px;
+  }
+  .clusterer {
+    max-width:645px;
     flex-direction: column;
   }
 }
