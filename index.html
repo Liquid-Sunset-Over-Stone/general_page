@@ -60,9 +60,7 @@ function noBlink() {
     <br>
     <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
     <div class="flex-container">
-      <!-- makes things go left -->
-      <div class="flex-item-left" style="overflow:hidden;">
-        <p>welcome to my webpage!<br>i put a bunch of stuff here. its kind of a mess.<br><br>
+      <center><p>welcome to my webpage!<br>i put a bunch of stuff here. its kind of a mess.<br><br>
           currently under some minor construction having to do with layout, mobile friendliness may waver for a bit
           <br><br>please feel free to contact me if i missed something in terms of accessibility!
         </p>
@@ -70,7 +68,10 @@ function noBlink() {
         <p>im attempting to start up a rain world community webring but currently these links take you nowhere<br>also attempting to embed the memory crypts vid without youtube tracking through it. i have cookies disabled but it does log some stuff when you click on the play button.</p>
 -->
         <button onclick="makeDark()" type="button">toggle background gradient</button>
-        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><br>
+        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><br></center>
+      <!-- makes things go left -->
+      <div class="flex-item-left" style="overflow:hidden;">
+        
         <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
         <div class="window">
           <div class="title-bar">
