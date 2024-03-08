@@ -43,71 +43,74 @@ function noBlink() {
   <!-- a lot of this code is copied over from another webpage i made over the summer. forgive the variable and id names. i got frustrated on occasion -->
 <!-- please do not interpret said variable and id names as ableism. i did not mean them as such. i was frustrated with the code and when i get frustrated with code i give things names like "stupif". this is not because i think that accessibility is stupid, its because i find adding stuff to be ridiciously complicated (which is stupid)-->
 <body class="normal" id="stupif">
-  <div class="window" style="max-width: 1290px;" id="big_window">
-    <!-- this is the title bar -->
-    <div class="title-bar">
-      <div class="title-bar-text">cool webpage</div>
-      <div class="title-bar-controls">
-        <button aria-label="Close" onclick="document.getElementById('big_window').style.visibility = 'hidden';" type="button"></button>
+  <div class="crt" id="noscan">
+    <div class="window" style="max-width: 1290px;" id="big_window">
+      <!-- this is the title bar -->
+      <div class="title-bar">
+        <div class="title-bar-text">cool webpage</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="document.getElementById('big_window').style.visibility = 'hidden';" type="button"></button>
+        </div>
       </div>
-    </div>
-    <div class="status-bar" style="text-align:center;">
-      <p class="status-bar-field"><a href="https://www.youtube.com/@probably_creek">my channel</a></p>
-      <p class="status-bar-field"><a href="">brain thoughts archive</a></p>
-      <p class="status-bar-field"><a href="https://liquid-sunset-over-stone.github.io/hub/">rain world ocs stuffs</a></p>
-      <p class="status-bar-field"><a href="https://www.youtube.com/@will0ww._.">my friend willows channel</a></p>
-    </div>
-    <br><br>
-    <center><p>welcome to my webpage!<br>i put a bunch of stuff here. its kind of a mess.<br><br></p>
-      <img src="./blinkiesCafe-ny.gif" style="max-width:955px;" alt="under slight construction" id="constructogif">
-          <p>currently under some minor construction having to do with layout, mobile friendliness may waver for a bit
+      <div class="status-bar" style="text-align:center;">
+        <p class="status-bar-field"><a href="https://www.youtube.com/@probably_creek">my channel</a></p>
+        <p class="status-bar-field"><a href="">brain thoughts archive</a></p>
+        <p class="status-bar-field"><a href="https://liquid-sunset-over-stone.github.io/hub/">rain world ocs stuffs</a></p>
+        <p class="status-bar-field"><a href="https://www.youtube.com/@will0ww._.">my friend willows channel</a></p>
+      </div>
+      <br><br>
+      <center>
+        <p>welcome to my webpage!<br>i put a bunch of stuff here. its kind of a mess.<br><br></p>
+        <img src="./blinkiesCafe-ny.gif" style="max-width:955px;" alt="under slight construction" id="constructogif">
+        <p>currently under some minor construction having to do with layout, mobile friendliness may waver for a bit
           <br><br>please feel free to contact me if i missed something in terms of accessibility!
         </p>
         <!--  <p><a>back</a> | rain world webring | <a>forward</a></p>
         <p>im attempting to start up a rain world community webring but currently these links take you nowhere<br>also attempting to embed the memory crypts vid without youtube tracking through it. i have cookies disabled but it does log some stuff when you click on the play button.</p>
 -->
-        <button onclick="makeDark()" type="button">toggle background gradient</button>
-        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><br></center>
-    <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
-    <div class="flex-container">
-      
-      <!-- makes things go left -->
-      <div class="flex-item-left" style="overflow:hidden;">
-        
-        <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-bar-text">bio</div>
+        <button onclick="makeDark()" type="button">toggle background</button>
+        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><br>
+      </center>
+      <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
+      <div class="flex-container">
+
+        <!-- makes things go left -->
+        <div class="flex-item-left" style="overflow:hidden;">
+
+          <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">bio</div>
+            </div>
+            <div class="window-body">
+              <p>yet another nonbinary digital artist! i draw creatures and guys. usually in angsty situations, but sometimes being silly.<br> i used to do minecraft youtube. its in a playlist on <a href="https://www.youtube.com/@probably_creek">my channel</a>, if youre curious.<br>i am highly aware that im cringe or whatever but im having fun so i count it as a win. i like coding, hitting people with swords (up to you to decide if theyre real swords or fake swords), writing, composing music, and other things.<br> i should probably become a game developer. but im tired.</p>
+            </div>
           </div>
-          <div class="window-body">
-            <p>yet another nonbinary digital artist! i draw creatures and guys. usually in angsty situations, but sometimes being silly.<br> i used to do minecraft youtube. its in a playlist on <a href="https://www.youtube.com/@probably_creek">my channel</a>, if youre curious.<br>i am highly aware that im cringe or whatever but im having fun so i count it as a win. i like coding, hitting people with swords (up to you to decide if theyre real swords or fake swords), writing, composing music, and other things.<br> i should probably become a game developer. but im tired.</p>
+          <br>
+          <div class="window" style="max-width:955px;">
+            <div class="title-bar">
+              <div class="title-bar-text">stuff i say and what it means:</div>
+            </div>
+            <div class="window-body">
+              <p>🧱 -- means i love more than i can put into words<br>
+                woa / woag -- literally just "woah"<br>
+                wawa -- idk could mean anything depending on context, but its a fan term for the noises slugcats make<br>
+                plate tectonically -- silly way of saying platonically<br>
+                sona -- i mean youre probably aware of what a sona is but in case you dont, its a persona<br><br>
+                i will add more to this dictionary as i go<br>
+                oc -- original character<br></p>
+            </div>
           </div>
-        </div>
-        <br>
-        <div class="window" style="max-width:955px;">
-          <div class="title-bar">
-            <div class="title-bar-text">stuff i say and what it means:</div>
+          <p><u>i also want to clear up some things before they become an issues or concerns:</u><br><br> i draw angst, violence, blood, and the like because i like the drama of it all. its fun to write and draw. i grew up with warrior cats, meaning its basically coded into me.<br> its not because i have issues or condone real violence. please do not mix up artist/writer/actor and character :3<br><br>this being said, take the trigger warnings i put on stuff seriously.<br> if i say "yo theres gonna be some illustrated blood/death/drug reference/etc etc", you better believe it.<br> i like to keep my art mostly family friendly and silly, and there will be stuff for those who prefer fluff, but there are also darker themes! i do not censor, i only warn.<br><br>this does not mean i draw other more adult topics. i will never draw things that are suggestive or explicit. i am not only a minor but also that is a boundary that should not be violated no matter my age. do not ask me to draw suggestive/explicit content. i will block you.</p>
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">this happened a while ago but i dont have the energy to change it :D</div>
+            </div>
+            <div class="window-body" style="overflow:auto; max-width:955px;">
+              <img src="./wheee.png" alt="a drawing of a cat wearing a sweatshirt riding a birdlike creature through a vast crypt. there is text that reads: 100 subs!" style="max-width:955px;">
+            </div>
           </div>
-          <div class="window-body">
-            <p>🧱 -- means i love more than i can put into words<br>
-              woa / woag -- literally just "woah"<br>
-              wawa -- idk could mean anything depending on context, but its a fan term for the noises slugcats make<br>
-              plate tectonically -- silly way of saying platonically<br>
-              sona -- i mean youre probably aware of what a sona is but in case you dont, its a persona<br><br>
-              i will add more to this dictionary as i go<br>
-              oc -- original character<br></p>
-          </div>
-        </div>
-        <p><u>i also want to clear up some things before they become an issues or concerns:</u><br><br> i draw angst, violence, blood, and the like because i like the drama of it all. its fun to write and draw. i grew up with warrior cats, meaning its basically coded into me.<br> its not because i have issues or condone real violence. please do not mix up artist/writer/actor and character :3<br><br>this being said, take the trigger warnings i put on stuff seriously.<br> if i say "yo theres gonna be some illustrated blood/death/drug reference/etc etc", you better believe it.<br> i like to keep my art mostly family friendly and silly, and there will be stuff for those who prefer fluff, but there are also darker themes! i do not censor, i only warn.<br><br>this does not mean i draw other more adult topics. i will never draw things that are suggestive or explicit. i am not only a minor but also that is a boundary that should not be violated no matter my age. do not ask me to draw suggestive/explicit content. i will block you.</p>
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-bar-text">this happened a while ago but i dont have the energy to change it :D</div>
-          </div>
-          <div class="window-body" style="overflow:auto; max-width:955px;">
-            <img src="./wheee.png" alt="a drawing of a cat wearing a sweatshirt riding a birdlike creature through a vast crypt. there is text that reads: 100 subs!" style="max-width:955px;">
-          </div>
-        </div>
-        <!--
+          <!--
         <div class="window" style="max-width: 955px">
           <div class="title-bar">
             <div class="title-bar-text">scug i am currently playing as</div>
@@ -117,158 +120,159 @@ function noBlink() {
             <img src="https://static.miraheze.org/rainworldwiki/thumb/2/21/Saint_select_screen.png/1024px-Saint_select_screen.png" style="max-width:955px" alt="image of the slugcat,  saint, from rain world. he is green and fluffy, with a long pink tongue spiraling around his floating body. his eyes are closed and his arms are raised slightly at his sides.">
           </div>
         </div> -->
-        <div style="overflow:clip; max-width:955px; max-height:50px;">
-          <img src="https://c.tenor.com/Q6IjG0Y6484AAAAC/tenor.gif" style="width:955px;height:50px; image-rendering:pixelated;" id="blinkies_again" alt="a gif of some pool water">
-        </div>
-        <div class="clusterer">
-          <div class="window" id="blember">
+          <div style="overflow:clip; max-width:955px; max-height:50px;">
+            <img src="https://c.tenor.com/Q6IjG0Y6484AAAAC/tenor.gif" style="width:955px;height:50px; image-rendering:pixelated;" id="blinkies_again" alt="a gif of some pool water">
+          </div>
+          <div class="clusterer">
+            <div class="window" id="blember">
+              <div class="title-bar">
+                <div class="title-bar-text">im attempting blender</div>
+
+              </div>
+              <div class="window-body" style="max-width:325px; overflow:auto;">
+                <img src="./this is so beautiful.png" style="max-width:450px" alt="a liminal pool, there are multiple levels connected by stairs.">
+              </div>
+            </div>
+            <div class="window" id="miros">
+              <div class="title-bar">
+                <div class="title-bar-text">miros bird (you guys liked this for some reason so it goes on website)</div>
+              </div>
+              <div class="window-body" style="max-width:400px; overflow:auto;">
+                <!-- i hate using iframe because it embeds another webpage into mine, which allows youtube's tracking to go through it when you click it. its not much but it logs a few things. -->
+                <iframe width="400" height="250" src="https://www.youtube-nocookie.com/embed/57uNeBevMHM?si=BWXC3OZtoxToAqkY" title="memory crypts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="window" style="max-width:255px; overflow:auto;">
+              <div class="title-bar">
+                <div class="title-bar-text">i love saint</div>
+              </div>
+              <div class="window-body" style="max-width:255px; overflow:auto;">
+                <img src="./saint rain worl.png" style="max-width:300%; height:auto;" alt="a low quality doodle of saint">
+              </div>
+            </div>
+          </div>
+          <div style="overflow:clip; max-width:955px; max-height:50px;">
+            <img src="https://c.tenor.com/-dxN7balt2kAAAAC/tenor.gif" style="width:955px;height:50px; image-rendering:pixelated; filter:saturate(10);" id="blinkies_yet_again" alt="more water, but highly saturated">
+          </div>
+
+          <div class="window" style="max-width:955px; overflow:auto;">
             <div class="title-bar">
-              <div class="title-bar-text">im attempting blender</div>
-
+              <div class="title-bar-text">gonna be writing a story</div>
             </div>
-            <div class="window-body" style="max-width:325px; overflow:auto;">
-              <img src="./this is so beautiful.png" style="max-width:450px" alt="a liminal pool, there are multiple levels connected by stairs.">
+            <div class="window-body" style="max-width:955px; overflow:auto;">
+              <p>im taking the jokey lore about the aviator, the privateer, glib, and the one scav i use for everything and making it actual character lore. the jokey lore is that the aviator dimension hops randomly via vehicle crashes... which is going to translate into the beginning of an "is this an isekai?" story with a character (creatively) named avi. avi is gonna meet the privateer (idk the new name yet), glib, and plexiem (the scav i use for everything). plexiem can randomly time travel whenever he "dies" and will wake up at a random point in time in the dimension hes in. they go off and do wacky adventures and maybe i have a plot in mind. im gonna do some character redesigns based off of my rain world ocs but my ocs will still exist. theyre just gonna see a different, less fandomy, version of their gang. there may or may not be some surrealist webcore themes included.</p>
             </div>
           </div>
-          <div class="window" id="miros">
+        </div>
+
+        <!-- this is what makes things go to the right -->
+        <div class="flex-item-right" style="overflow:hidden;">
+          <div class="window">
             <div class="title-bar">
-              <div class="title-bar-text">miros bird (you guys liked this for some reason so it goes on website)</div>
+              <div class="title-bar-text">current mood</div>
             </div>
-            <div class="window-body" style="max-width:400px; overflow:auto;">
-              <!-- i hate using iframe because it embeds another webpage into mine, which allows youtube's tracking to go through it when you click it. its not much but it logs a few things. -->
-              <iframe width="400" height="250" src="https://www.youtube-nocookie.com/embed/57uNeBevMHM?si=BWXC3OZtoxToAqkY" title="memory crypts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="window-body">
+              <p><b><i>"thou wilt never<br>know what i am<br>i am the fifth dimension<br>and ill split the atom"</i></b></p>
             </div>
           </div>
-          <div class="window" style="max-width:255px; overflow:auto;">
+          <div class="window">
             <div class="title-bar">
-              <div class="title-bar-text">i love saint</div>
+              <div class="title-bar-text">breaking news:</div>
             </div>
-            <div class="window-body" style="max-width:255px; overflow:auto;">
-              <img src="./saint rain worl.png" style="max-width:300%; height:auto;" alt="a low quality doodle of saint">
+            <div class="window-body">
+              <p>im participating in inkycorvids MAPathon :3</p>
+            </div>
+          </div>
+
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">stuff im currently working on (in no particular order)</div>
+            </div>
+            <div class="window-body">
+              <ul>
+                <li>
+                  <p>hosting animal cannibal artificer MAP</p>
+                </li>
+                <li>
+                  <p>preparing livin thing rivulet MAP for hosting, cohosted by shiny</p>
+                </li>
+                <li>
+                  <p>finishing up isle unto thyself PMV</p>
+                </li>
+                <li>
+                  <p>schoolwork</p>
+                </li>
+                <li>
+                  <p>studying perspective and backgrounds</p>
+                </li>
+                <li>
+                  <p>this website</p>
+                </li>
+                <li>
+                  <p>learning blender</p>
+                </li>
+                <li>
+                  <p>physical health, like working out and preventing cavities</p>
+                </li>
+                <li>
+                  <p>making new ocs because my old ones are not animation friendly</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">stuff i have planned (in no particular order | half of this will never be done because i have adhd)</div>
+            </div>
+            <div class="window-body">
+              <ul>
+                <li>
+                  <p>rhinestone eyes MAP, cohosted by the amazing skittle</p>
+                </li>
+                <li>
+                  <p>cabinet man animatic</p>
+                </li>
+                <li>
+                  <p>comic about rain world oc</p>
+                </li>
+                <li>
+                  <p>helping to work on a huge rain world modding project</p>
+                </li>
+                <li>
+                  <p>oc animations and lore stuff, maybe a series of shorts</p>
+                </li>
+                <li>
+                  <p>evil saint sillypost</p>
+                </li>
+                <li>
+                  <p>fish in a birdcage MAP</p>
+                </li>
+                <li>
+                  <p>finishing heaven says animatic</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="overflow:clip;"><img src="https://c.tenor.com/kbAXHrIp5agAAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" alt="a gif of a bright blue wave of water on a pink background" id="blinkies"></div>
+          <div class="window" style="max-width:645px;">
+            <div class="title-bar">
+              <div class="title-bar-text">random things on my mind</div>
+            </div>
+            <div class="window-body" style="max-width:645px; overflow:auto;">
+              <p>saint really is a tribute to movement and the feeling of your first playthrough. you cant fight back (unless specific circumstances are met) and you are equipped with a grappling tongue. so many combinations can be made and will be made in the heat of the moment. the smooth swinging transitioning into a roll, then a pounce, and back into a swing again as you flee from a red lizard. nearly falling to your death to then, at the last second, attach to the nearest surface and be flung upwards. saint is momentum.</p>
             </div>
           </div>
         </div>
-        <div style="overflow:clip; max-width:955px; max-height:50px;">
-          <img src="https://c.tenor.com/-dxN7balt2kAAAAC/tenor.gif" style="width:955px;height:50px; image-rendering:pixelated; filter:saturate(10);" id="blinkies_yet_again" alt="more water, but highly saturated">
-        </div>
+      </div> <!-- i ended the first flex container here-->
+      <!-- this is self explanatory, it centers the stuff here -->
 
-        <div class="window" style="max-width:955px; overflow:auto;">
-          <div class="title-bar">
-            <div class="title-bar-text">gonna be writing a story</div>
-          </div>
-          <div class="window-body" style="max-width:955px; overflow:auto;">
-            <p>im taking the jokey lore about the aviator, the privateer, glib, and the one scav i use for everything and making it actual character lore. the jokey lore is that the aviator dimension hops randomly via vehicle crashes... which is going to translate into the beginning of an "is this an isekai?" story with a character (creatively) named avi. avi is gonna meet the privateer (idk the new name yet), glib, and plexiem (the scav i use for everything). plexiem can randomly time travel whenever he "dies" and will wake up at a random point in time in the dimension hes in. they go off and do wacky adventures and maybe i have a plot in mind. im gonna do some character redesigns based off of my rain world ocs but my ocs will still exist. theyre just gonna see a different, less fandomy, version of their gang. there may or may not be some surrealist webcore themes included.</p>
-          </div>
-        </div>
-      </div>
+      <!-- i start another flex container here-->
 
-      <!-- this is what makes things go to the right -->
-      <div class="flex-item-right" style="overflow:hidden;">
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-bar-text">current mood</div>
-          </div>
-          <div class="window-body">
-            <p><b><i>"thou wilt never<br>know what i am<br>i am the fifth dimension<br>and ill split the atom"</i></b></p>
-          </div>
-        </div>
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-bar-text">breaking news:</div>
-          </div>
-          <div class="window-body">
-            <p>im participating in inkycorvids MAPathon :3</p>
-          </div>
-        </div>
-        
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-bar-text">stuff im currently working on (in no particular order)</div>
-          </div>
-          <div class="window-body">
-            <ul>
-              <li>
-                <p>hosting animal cannibal artificer MAP</p>
-              </li>
-              <li>
-                <p>preparing livin thing rivulet MAP for hosting, cohosted by shiny</p>
-              </li>
-              <li>
-                <p>finishing up isle unto thyself PMV</p>
-              </li>
-              <li>
-                <p>schoolwork</p>
-              </li>
-              <li>
-                <p>studying perspective and backgrounds</p>
-              </li>
-              <li>
-                <p>this website</p>
-              </li>
-              <li>
-                <p>learning blender</p>
-              </li>
-              <li>
-                <p>physical health, like working out and preventing cavities</p>
-              </li>
-              <li>
-                <p>making new ocs because my old ones are not animation friendly</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-bar-text">stuff i have planned (in no particular order | half of this will never be done because i have adhd)</div>
-          </div>
-          <div class="window-body">
-            <ul>
-              <li>
-                <p>rhinestone eyes MAP, cohosted by the amazing skittle</p>
-              </li>
-              <li>
-                <p>cabinet man animatic</p>
-              </li>
-              <li>
-                <p>comic about rain world oc</p>
-              </li>
-              <li>
-                <p>helping to work on a huge rain world modding project</p>
-              </li>
-              <li>
-                <p>oc animations and lore stuff, maybe a series of shorts</p>
-              </li>
-              <li>
-                <p>evil saint sillypost</p>
-              </li>
-              <li>
-                <p>fish in a birdcage MAP</p>
-              </li>
-              <li>
-                <p>finishing heaven says animatic</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div style="overflow:clip;"><img src="https://c.tenor.com/kbAXHrIp5agAAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" alt="a gif of a bright blue wave of water on a pink background" id="blinkies"></div>
-        <div class="window" style="max-width:645px;">
-          <div class="title-bar">
-            <div class="title-bar-text">random things on my mind</div>
-          </div>
-          <div class="window-body" style="max-width:645px; overflow:auto;">
-            <p>saint really is a tribute to movement and the feeling of your first playthrough. you cant fight back (unless specific circumstances are met) and you are equipped with a grappling tongue. so many combinations can be made and will be made in the heat of the moment. the smooth swinging transitioning into a roll, then a pounce, and back into a swing again as you flee from a red lizard. nearly falling to your death to then, at the last second, attach to the nearest surface and be flung upwards. saint is momentum.</p>
-          </div>
-        </div>
-      </div>
-    </div> <!-- i ended the first flex container here-->
-    <!-- this is self explanatory, it centers the stuff here -->
-
-    <!-- i start another flex container here-->
-
-    <center>
-      <p>i built this website up from the ground minus the <a href="https://jdan.github.io/98.css/">main css framework</a> i used and the <a href="https://www.w3schools.com/csS/css3_flexbox.asp">flexbox tutorial</a> because css that makes the site actually function is not something i can do in the fleeting free moments of school.</p>
-    </center>
+      <center>
+        <p>i built this website up from the ground minus the <a href="https://jdan.github.io/98.css/">main css framework</a> i used and the <a href="https://www.w3schools.com/csS/css3_flexbox.asp">flexbox tutorial</a> because css that makes the site actually function is not something i can do in the fleeting free moments of school.</p>
+      </center>
+    </div>
   </div>
 </body>
 </html>
