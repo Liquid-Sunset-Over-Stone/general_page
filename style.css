@@ -122,11 +122,11 @@ div#miros.window {
   }
   .flex-item-right {
     max-width: 645px;
-    align-self:center;
+
   }
   .flex-item-left {
     max-width: 645px;
-    align-self:center;
+   
   }
   .clusterer {
     max-width:645px;
