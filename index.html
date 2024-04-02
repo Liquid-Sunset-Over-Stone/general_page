@@ -7,7 +7,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./style.css">
 <link rel="icon" type="favicon" href="/hub/New Piskel.png">
-  <script>function makeDark() {
+  <script>if (localStorage.getItem("porl_count") == null) {
+  var porl = 0;
+  localStorage.setItem("porl_count", porl);
+} else {
+  localStorage.getItem("porl_count");
+  porl = localStorage.getItem("porl_count");
+}
+var porls_text;
+function porl_add() {
+  porl++;
+  localStorage.setItem("porl_count", porl);
+  document.getElementById("porl_display_text").innerHTML =
+    "porls = " + localStorage.getItem("porl_count");
+  if (porl == null) {
+    porl = 0;
+  }
+
+  console.log(porl);
+}
+function makeDark() {
   var exploding = document.getElementById("stupif");
   exploding.classList.toggle("accessib");
   var urmom = document.getElementById("noscan");
@@ -19,13 +38,9 @@ function noBlink() {
   var funkyvar = document.getElementById("blinkies");
   var testvar = document.getElementById("blinkies_again");
   var yetanothervar = document.getElementById("blinkies_yet_again");
-  
-  var ruffle  = document.getElementById("rivuletgif");
   funkyvar.classList.toggle("nogif");
   testvar.classList.toggle("nogif");
   yetanothervar.classList.toggle("nogif");
-  
-  ruffle.classList.toggle("nogif");
   if (blinkclik == true) {
     document.getElementById("blinkbutton").innerHTML = "click to turn on gifs";
     blinkclik = false;
@@ -37,14 +52,13 @@ function noBlink() {
     }
   }
 }
-
-    console.log("the errors and warnings are caused by the third party sources, i am so sorry\nim gonna try to get it figured out")
-    console.log("also hi!!!")
+console.log("LET ME IMPLEMENT FUN FEATURES!!!")
   </script>
 </head>
   <!-- a lot of this code is copied over from another webpage i made over the summer. forgive the variable and id names. i got frustrated on occasion -->
 <!-- please do not interpret said variable and id names as ableism. i did not mean them as such. i was frustrated with the code and when i get frustrated with code i give things names like "stupif". this is not because i think that accessibility is stupid, its because i find adding stuff to be ridiciously complicated (which is stupid)-->
 <body class="normal" id="stupif">
+
   <div class="crt" id="noscan">
     <div class="window" style="max-width: 1290px;" id="big_window">
       <!-- this is the title bar -->
@@ -64,7 +78,7 @@ function noBlink() {
       <br><br>
       <center>
         <p>welcome to my website!<br>i put a bunch of stuff here. its kind of a mess.<br><br>currently trying to fix an issue with the flex container resizing, it only effects the miros bird window on mobile and resized desktop screens. its very annoying to me but shouldnt be a major issue. <br></p>
-       
+
         <p>
           <br><br>please feel free to contact me if i missed something in terms of accessibility!
         </p>
@@ -72,14 +86,24 @@ function noBlink() {
         <p>im attempting to start up a rain world community webring but currently these links take you nowhere<br>also attempting to embed the memory crypts vid without youtube tracking through it. i have cookies disabled but it does log some stuff when you click on the play button.</p>
 -->
         <button onclick="makeDark()" type="button">toggle background</button>
-        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><br>
+        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><button type="button" onclick="porl_add()">porl</button><br>
       </center>
       <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
       <div class="flex-container">
 
         <!-- makes things go left -->
         <div class="flex-item-left" style="overflow:hidden;">
-
+          <div class="window" style="width: 300px" id="porl_display" onclick=" document.getElementById('porl_display').style.visibility = 'hidden';">
+            <div class="title-bar">
+              <div class="title-bar-text">porl count</div>
+              <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body" id="porl_display_text">
+              <p id="porl_display_text"></p>
+            </div>
+          </div>
           <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
           <div class="window">
             <div class="title-bar">
@@ -96,10 +120,18 @@ function noBlink() {
             <div class="window-body">
               <p>people i dont want to see in my comment sections or elsewhere (i will block)</p>
               <ul>
-              <li><p>people who just want to be mean and exclusionary in general</p></li>
-              <li><p>creepy people who give me a weird vibe</p></li>
-              <li><p>evolution deniers (i am seething rn bc i just did a ton of research on it and i just heard someone deny it and hhdhshfh)</p></li>
-              <li><p>ai image/video/voice generation/replication users</p></li>
+                <li>
+                  <p>people who just want to be mean and exclusionary in general</p>
+                </li>
+                <li>
+                  <p>creepy people who give me a weird vibe</p>
+                </li>
+                <li>
+                  <p>evolution deniers (i am seething rn bc i just did a ton of research on it and i just heard someone deny it and hhdhshfh)</p>
+                </li>
+                <li>
+                  <p>ai image/video/voice generation/replication users</p>
+                </li>
               </ul>
             </div>
           </div>
@@ -120,7 +152,8 @@ function noBlink() {
                 EATING YOUR ART -- i love your art and i will be thinking about it a lot<br>
                 *yoyure -- incorrectly correcting an incorrect use of "your" or "youre" in a jokey manner<br>
                 <br><br>
-                i will add more to this dictionary as i go</p>
+                i will add more to this dictionary as i go
+              </p>
             </div>
           </div>
           <p><u>i also want to clear up some things before they become an issues or concerns:</u><br><br> i draw angst, violence, blood, and the like because i like the drama of it all. its fun to write and draw. i grew up with warrior cats, meaning its basically coded into me.<br> its not because i have issues or condone real violence. please do not mix up artist/writer/actor and character :3<br><br>this being said, take the trigger warnings i put on stuff seriously.<br> if i say "yo theres gonna be some illustrated blood/death/drug reference/etc etc", you better believe it.<br> i like to keep my art mostly family friendly and silly, and there will be stuff for those who prefer fluff, but there are also darker themes! i do not censor, i only warn.<br><br>this does not mean i draw other more adult topics. i will never draw things that are suggestive or explicit. i am not only a minor but also that is a boundary that should not be violated no matter my age. do not ask me to draw suggestive/explicit content. i will block you.</p>
@@ -202,7 +235,7 @@ function noBlink() {
               <div class="title-bar-text">breaking news:</div>
             </div>
             <div class="window-body">
-              <p>im participating in inkycorvids MAPathon :3<br><br>ARTIFICER PLUSH ARRIVED AND IM SO HAPPY</p>
+              <p>im participating in inkycorvids MAPathon :3<br><br>ARTIFICER PLUSH ARRIVED AND IM SO HAPPY<br>heard about tumblrs april fools boop feature and although i dont have tumblr i love the idea of racking up silly points so im implementing a similar feature now now</p>
               <p>homophobes really be reporting me for terrorism over a rainbow ribbon XD</p>
             </div>
           </div>
@@ -226,7 +259,10 @@ function noBlink() {
                   <p>this website (making some webpage templates)</p>
                 </li>
                 <li>
-                  <p>cabinet man animatic</p>
+                  <p>cabinet man animatic (on the backburner because i have slight burnout)</p>
+                </li>
+                <li>
+                  <p>evil saint sillypost</p>
                 </li>
                 <li>
                   <p>preparing livin thing rivulet MAP for hosting, cohosted by shiny</p>
@@ -249,7 +285,7 @@ function noBlink() {
                 <li>
                   <p>rhinestone eyes MAP, cohosted by the amazing skittle</p>
                 </li>
-                
+
                 <li>
                   <p>comic about rain world oc</p>
                 </li>
@@ -259,9 +295,7 @@ function noBlink() {
                 <li>
                   <p>oc animations and lore stuff, maybe a series of shorts</p>
                 </li>
-                <li>
-                  <p>evil saint sillypost</p>
-                </li>
+
                 <li>
                   <p>fish in a birdcage MAP</p>
                 </li>
@@ -293,9 +327,10 @@ function noBlink() {
               <div class="title-bar-text">ai image generation</div>
             </div>
             <div class="window-body" style="max-width:645px; overflow:auto;">
-<p>
-  it can make images faster and better than we can. it can animate. but whats the point? if we automate everything, including being creative, what is the point? this is our last tower, our last stance of being superior before we realize we are useless. ai can reuse everything, it has a near infinite source of things to scrape and sample from. it can output "unique concepts" without the thought behind it faster than i can with the thought behind it. <br>ai means we, as homo sapiens, are not special anymore on our planet. we are inferior to something and its scary. art is a way of taking control but its bleeding into that and we cant stop it.<br>there is no point once we automate creation and innovation. i mean "eat", "drink", "type prompt" seem to be the future of things we have to do. and who knows? maybe that will be automated. we just consume. but there is no point in it. just observing empty images makes empty people. we need to create. ai takes that away. its not for artists, its for people who just want to see a pretty picture.
-</p>            </div>
+              <p>
+                it can make images faster and better than we can. it can animate. but whats the point? if we automate everything, including being creative, what is the point? this is our last tower, our last stance of being superior before we realize we are useless. ai can reuse everything, it has a near infinite source of things to scrape and sample from. it can output "unique concepts" without the thought behind it faster than i can with the thought behind it. <br>ai means we, as homo sapiens, are not special anymore on our planet. we are inferior to something and its scary. art is a way of taking control but its bleeding into that and we cant stop it.<br>there is no point once we automate creation and innovation. i mean "eat", "drink", "type prompt" seem to be the future of things we have to do. and who knows? maybe that will be automated. we just consume. but there is no point in it. just observing empty images makes empty people. we need to create. ai takes that away. its not for artists, its for people who just want to see a pretty picture.
+              </p>
+            </div>
           </div>
         </div>
       </div>
