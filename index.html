@@ -76,7 +76,7 @@ function noBlink() {
       </div>
       <br><br>
       <center>
-        <p>welcome to my website!<br>i put a bunch of stuff here. its kind of a mess.<br><br>currently trying to fix an issue with the flex container resizing, it only effects the miros bird window on mobile and resized desktop screens. its very annoying to me but shouldnt be a major issue. <br></p>
+        <p>welcome to my website!<br>i put a bunch of stuff here. its kind of a mess.<br><br>currently trying to fix an issue with the flex container resizing, its very annoying to me but shouldnt be a major issue. <br></p>
 
         <p>
           <br><br>please feel free to contact me if i missed something in terms of accessibility!
@@ -86,14 +86,8 @@ function noBlink() {
         <p>im attempting to start up a rain world community webring but currently these links take you nowhere<br>also attempting to embed the memory crypts vid without youtube tracking through it. i have cookies disabled but it does log some stuff when you click on the play button.</p>
 -->
         <button onclick="makeDark()" type="button">toggle background</button>
-        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><button type="button" onclick="porl_add()">porl</button><br>
-      </center>
-      <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
-      <div class="flex-container">
-
-        <!-- makes things go left -->
-        <div class="flex-item-left" style="overflow:hidden;">
-          <div class="window" style="width: 300px" id="porl_display" onclick=" document.getElementById('porl_display').style.visibility = 'hidden';">
+        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><button type="button" onclick="porl_add()">porl</button><br><br>
+        <div class="window" style="width: 300px" id="porl_display" onclick=" document.getElementById('porl_display').style.visibility = 'hidden';">
             <div class="title-bar">
               <div class="title-bar-text">porl count</div>
               <div class="title-bar-controls">
@@ -103,7 +97,14 @@ function noBlink() {
             <div class="window-body" id="porl_display_text">
               <p id="porl_display_text"></p>
             </div>
-          </div>
+          </div><br>
+      </center>
+      <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
+      <div class="flex-container">
+
+        <!-- makes things go left -->
+        <div class="flex-item-left" style="overflow:hidden;">
+          
           <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
           <div class="window">
             <div class="title-bar">
@@ -235,8 +236,7 @@ function noBlink() {
               <div class="title-bar-text">breaking news:</div>
             </div>
             <div class="window-body">
-              <p>im participating in inkycorvids MAPathon :3<br><br>ARTIFICER PLUSH ARRIVED AND IM SO HAPPY<br>heard about tumblrs april fools boop feature and although i dont have tumblr i love the idea of racking up silly points so im implementing a similar feature now now</p>
-              <p>homophobes really be reporting me for terrorism over a rainbow ribbon XD</p>
+              <p>ECLIPSE DAY!</p>
             </div>
           </div>
 
@@ -261,9 +261,7 @@ function noBlink() {
                 <li>
                   <p>cabinet man animatic (on the backburner because i have slight burnout)</p>
                 </li>
-                <li>
-                  <p>evil saint sillypost</p>
-                </li>
+                
                 <li>
                   <p>preparing livin thing rivulet MAP for hosting, cohosted by shiny</p>
                 </li>
