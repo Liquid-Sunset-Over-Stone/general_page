@@ -26,6 +26,27 @@ function porl_add() {
 
   console.log(porl);
 }
+//spears
+if (localStorage.getItem("spear_count") == null) {
+  var spear = 0;
+  localStorage.setItem("spear_count", spear);
+} else {
+  localStorage.getItem("spear_count");
+  spear = localStorage.getItem("spear_count");
+}
+var spears_text;
+function spear_add() {
+  spear++;
+  porl = porl - 1;
+  localStorage.setItem("spear_count", spear);
+  document.getElementById("spear_display_text").innerHTML =
+    "spears = " + localStorage.getItem("spear_count");
+  if (spear == null) {
+    spear = 0;
+  }
+
+  console.log(spear);
+}
 function makeDark() {
   var exploding = document.getElementById("stupif");
   exploding.classList.toggle("accessib");
@@ -52,6 +73,7 @@ function noBlink() {
     }
   }
 }
+
   </script>
 </head>
   <!-- a lot of this code is copied over from another webpage i made over the summer. forgive the variable and id names. i got frustrated on occasion -->
@@ -86,25 +108,36 @@ function noBlink() {
         <p>im attempting to start up a rain world community webring but currently these links take you nowhere<br>also attempting to embed the memory crypts vid without youtube tracking through it. i have cookies disabled but it does log some stuff when you click on the play button.</p>
 -->
         <button onclick="makeDark()" type="button">toggle background</button>
-        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><button type="button" onclick="porl_add()">porl</button><br><br>
+        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><button type="button" onclick="porl_add()">porl</button><button onclick="spear_add()">spear</button><br><br>
         <div class="window" style="width: 300px" id="porl_display" onclick=" document.getElementById('porl_display').style.visibility = 'hidden';">
-            <div class="title-bar">
-              <div class="title-bar-text">porl count</div>
-              <div class="title-bar-controls">
-                <button aria-label="Close"></button>
-              </div>
+          <div class="title-bar">
+            <div class="title-bar-text">porl count</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
             </div>
-            <div class="window-body" id="porl_display_text">
-              <p id="porl_display_text"></p>
+          </div>
+          <div class="window-body" id="porl_display_text">
+            <p id="porl_display_text"></p>
+          </div>
+        </div>
+        <div class="window" style="width: 300px" id="spear_display" onclick=" document.getElementById('spear_display').style.visibility = 'hidden';">
+          <div class="title-bar">
+            <div class="title-bar-text">inventory</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
             </div>
-          </div><br>
+          </div>
+          <div class="window-body">
+            <p id="spear_display_text"></p>
+          </div>
+        </div><br>
       </center>
       <!-- flex-container is what makes it change size! this is the first container. you cannot see the container itself normally -->
       <div class="flex-container">
 
         <!-- makes things go left -->
         <div class="flex-item-left" style="overflow:hidden;">
-          
+
           <!-- this thing is a smaller window inside the main one, i use a bunch of these -->
           <div class="window">
             <div class="title-bar">
@@ -249,28 +282,27 @@ function noBlink() {
                 <li>
                   <p>schoolwork</p>
                 </li>
-                 <li>
+                <li>
                   <p>cabinet man animatic (BURNOUT EXISTS BUT SO DOES THE FIERY SPIRIT OF COMPETION WITH GALACTICBEANSOUP TO SEE WHO FINISHES THEIR CABINET MAN PROJECT FIRST)</p>
                 </li>
                 <li>
                   <p>RPG animation meme (les OCs be vibing)</p>
                 </li>
-                
+
                 <li>
                   <p>hosting animal cannibal artificer MAP</p>
                 </li>
                 <li>
                   <p>this website (making some webpage templates)</p>
                 </li>
-               
-                
+
                 <li>
                   <p>preparing livin thing rivulet MAP for hosting, cohosted by shiny</p>
                 </li>
                 <li>
                   <p>studying perspective and backgrounds</p>
                 </li>
-                
+
               </ul>
             </div>
           </div>
@@ -290,7 +322,6 @@ function noBlink() {
                 <li>
                   <p>helping to work on a huge rain world modding project</p>
                 </li>
-                
 
                 <li>
                   <p>fish in a birdcage MAP</p>
