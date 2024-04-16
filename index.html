@@ -36,12 +36,20 @@ if (localStorage.getItem("spear_count") == null) {
 }
 var spears_text;
 function spear_add() {
-  if(porl => 1){
+  if(porl >= 1){
     spear++;
     porl = porl - 1;
     localStorage.setItem("spear_count", spear);
     document.getElementById("spear_display_text").innerHTML =
     "spears = " + localStorage.getItem("spear_count");
+    localStorage.setItem("porl_count", porl);
+  document.getElementById("porl_display_text").innerHTML =
+    "porls = " + localStorage.getItem("porl_count");
+  if (porl == null) {
+    porl = 0;
+  }
+
+  console.log(porl);
     if (spear == null) {
       spear = 0;
     }}
