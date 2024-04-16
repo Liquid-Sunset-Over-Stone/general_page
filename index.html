@@ -36,17 +36,21 @@ if (localStorage.getItem("spear_count") == null) {
 }
 var spears_text;
 function spear_add() {
-  spear++;
-  porl = porl - 1;
-  localStorage.setItem("spear_count", spear);
-  document.getElementById("spear_display_text").innerHTML =
+  if(porl => 1):
+    spear++;
+    porl = porl - 1;
+    localStorage.setItem("spear_count", spear);
+    document.getElementById("spear_display_text").innerHTML =
     "spears = " + localStorage.getItem("spear_count");
-  if (spear == null) {
-    spear = 0;
-  }
+    if (spear == null) {
+      spear = 0;
+    }}
+    else{
+      alert("not enough porl to purchase!")
+    }
 
-  console.log(spear);
-}
+    console.log(spear);
+  }
 function makeDark() {
   var exploding = document.getElementById("stupif");
   exploding.classList.toggle("accessib");
