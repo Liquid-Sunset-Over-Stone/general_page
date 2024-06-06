@@ -125,22 +125,22 @@ function noBlink() {
 -->
         <button onclick="makeDark()" type="button">toggle background</button>
         <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><br><br><button type="button" onclick="porl_add()">porl</button><button onclick="spear_add()">spear</button><button onclick="erase()">reset</button><br><br>
-        <div class="window" style="width: 300px" id="porl_display" onclick=" document.getElementById('porl_display').style.visibility = 'hidden';">
+        <div class="window" style="width: 300px" id="porl_display" >
           <div class="title-bar">
             <div class="title-bar-text">porl count</div>
             <div class="title-bar-controls">
-              <button aria-label="Close"></button>
+              <button aria-label="Close" onclick=" document.getElementById('porl_display').style.visibility = 'hidden';"></button>
             </div>
           </div>
           <div class="window-body" id="porl_display_text">
             <p id="porl_display_text"></p>
           </div>
         </div>
-        <div class="window" style="width: 300px" id="spear_display" onclick=" document.getElementById('spear_display').style.visibility = 'hidden';">
+        <div class="window" style="width: 300px" id="spear_display" >
           <div class="title-bar">
             <div class="title-bar-text">inventory</div>
             <div class="title-bar-controls">
-              <button aria-label="Close"></button>
+              <button aria-label="Close" onclick=" document.getElementById('spear_display').style.visibility = 'hidden';"></button>
             </div>
           </div>
           <div class="window-body">
