@@ -327,7 +327,7 @@ a:hover {
   }
 }
 .crt {
-  animation: shadow 1.6s infinite;
+  /*animation: shadow 1.6s infinite;*/
 }
 .scanoff{
   animation: stopper 10s infinite;
