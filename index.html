@@ -72,26 +72,8 @@ function makeDark() {
   urmom.classList.toggle("scanoff");
 }
 
-var blinkclik = true;
-function noBlink() {
-  var funkyvar = document.getElementById("blinkies");
-  var testvar = document.getElementById("blinkies_again");
-  var yetanothervar = document.getElementById("blinkies_yet_again");
-  var rivvar = document.getElementById("spin_riv");
-  funkyvar.classList.toggle("nogif");
-  testvar.classList.toggle("nogif");
-  yetanothervar.classList.toggle("nogif");
-  if (blinkclik == true) {
-    document.getElementById("blinkbutton").innerHTML = "click to turn on gifs";
-    blinkclik = false;
-  } else {
-    if (blinkclik == false) {
-      document.getElementById("blinkbutton").innerHTML =
-        "click to turn off gifs";
-      blinkclik = true;
-    }
-  }
-}
+
+
 // this code is awful but also lovely? i definitely couldve done it better but its kind of beautiful in its own messed up and clunky way.
     //also the saving function??? i made that myself! i tried to look up how to do it but didnt get a clear answer. i made that. myself.
     //its bad but its also good. im proud.
@@ -129,7 +111,7 @@ function noBlink() {
 -->
 <!--         wow so hows that going buddy? -->
         <button onclick="makeDark()" type="button">toggle background</button>
-        <button onclick="noBlink()" id="blinkbutton" type="button">click to turn off gifs</button><br><br><button type="button" onclick="porl_add()">porl</button><button onclick="spear_add()">spear</button><button onclick="erase()">reset</button><br><br>
+        <button type="button" onclick="porl_add()">porl</button><button onclick="spear_add()">spear</button><button onclick="erase()">reset</button><br><br>
         <div class="window" style="width: 300px" id="porl_display" >
           <div class="title-bar">
             <div class="title-bar-text">porl count</div>
@@ -324,7 +306,7 @@ function noBlink() {
             </div>
           </div>
          
-          <div style="overflow:clip;"><img src="https://c.tenor.com/kbAXHrIp5agAAAAC/tenor.gif" style="width:645px;height:50px; image-rendering:pixelated;" alt="a gif of a bright blue wave of water on a pink background" id="blinkies"></div>
+         
           <div class="window" style="max-width:645px;">
             <div class="title-bar">
               <div class="title-bar-text">random things on my mind</div>
